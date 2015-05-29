@@ -19,5 +19,7 @@ public class TowerDefense extends Game {
 		Game.name="JavaTowerDefense";
 		TowerDefense.build(new TowerDefense(args));
 	}
+	
+	
 
 }
