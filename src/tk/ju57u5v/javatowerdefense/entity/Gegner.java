@@ -8,9 +8,7 @@ import tk.ju57u5v.engine.graphics.Sprite;
 public abstract class Gegner extends Entity {
 
 	protected Sprite texture;
-	protected double speed;
-	protected double leben;
-	protected double damage;
+	protected double speed,leben,damage;
 	private boolean started = false;
 	
 	public Gegner() {
