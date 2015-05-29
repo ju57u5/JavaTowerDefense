@@ -1,13 +1,18 @@
 package tk.ju57u5v.javatowerdefense.entity;
 
-import tk.ju57u5v.javatowerdefense.TowerDefense;
+import tk.ju57u5v.engine.Game;
 
-public class Fliesentisch extends TowerDefense {
 
-	public Fliesentisch(String[] args) {
-		super(args);
-		
-		this.initalizeGame();
+public class Fliesentisch extends Gegner {
+
+	public Fliesentisch () {
+		speed=1;
+		life=1;
+		damage=1;
+		exp=1;
+		money_droped=1;
+		texture = Game.getResourceManager().getResource("fliesentisch");
+		this.initialise();
 	}
 	
 	
