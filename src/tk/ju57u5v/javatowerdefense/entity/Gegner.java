@@ -9,7 +9,7 @@ import tk.ju57u5v.engine.graphics.Sprite;
 public abstract class Gegner extends Entity {
 
 	protected Sprite texture;
-	protected double speed,leben,damage;
+	protected double speed,life,damage,exp,drops;
 	private boolean started = false;
 	private Vec2 startPos = new Vec2();
 	
