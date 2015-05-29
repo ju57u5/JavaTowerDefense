@@ -11,7 +11,7 @@ import tk.ju57u5v.engine.world.Tile;
 public abstract class Gegner extends Entity {
 
 	protected Sprite texture;
-	protected double speed,leben,damage;
+	protected double speed,life,damage,exp,money_droped;
 	private boolean started = false;
 	private Vec2 startPos = new Vec2();
 	private Tile vorher;
