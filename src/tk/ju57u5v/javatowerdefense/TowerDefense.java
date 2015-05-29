@@ -12,7 +12,7 @@ public class TowerDefense extends Game {
 
 	@Override
 	public void tick() {
-
+		
 	}
 
 	public static void main(String[] args) {
