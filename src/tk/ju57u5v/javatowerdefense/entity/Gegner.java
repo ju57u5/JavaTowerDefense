@@ -19,12 +19,13 @@ public abstract class Gegner extends Entity {
 	
 	public Gegner() {
 		super();
+		setDimension(new Vec2(50,50));
 	}
 
 	@Override
 	public void update() {
 		super.update();
-		if (started) {
+		if (started && !isMoving()) {
 			
 			Tile[][] tiles = Game.getTileManager().getTiles();
 			
@@ -33,16 +34,16 @@ public abstract class Gegner extends Entity {
 					if (TwoDMath.isRectInRect(getX(), getY(), getWidth(), getHeight(), tiles[c][i].getX(), tiles[c][i].getY(), tiles[c][i].getWidth(), tiles[c][i].getHeight())) {
 						
 						if (tiles[c+1][i].getTexture()==2 && tiles[c+1][i] != vorher) {
-							this.moveTo(tiles[c+1][i].getMiddel(),speed);
+							this.moveTo(tiles[c+1][i].getMiddel().minus(getDimension().div(2)),speed);
 							
 						} else if (c != 0 && tiles[c-1][i].getTexture()==2 && tiles[c-1][i] != vorher) {
-							this.moveTo(tiles[c-1][i].getMiddel(),speed);
+							this.moveTo(tiles[c-1][i].getMiddel().minus(getDimension().div(2)),speed);
 							
 						} else if (tiles[c][i+1].getTexture()==2 && tiles[c][i+1] != vorher) {
-							this.moveTo(tiles[c][i+1].getMiddel(),speed);
+							this.moveTo(tiles[c][i+1].getMiddel().minus(getDimension().div(2)),speed);
 							
 						} else if (i != 0 && tiles[c][i-1].getTexture()==2 && tiles[c][i-1] != vorher) {
-							this.moveTo(tiles[c][i-1].getMiddel(),speed);
+							this.moveTo(tiles[c][i-1].getMiddel().minus(getDimension().div(2)),speed);
 							
 						} else {
 							started=false;

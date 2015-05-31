@@ -49,6 +49,12 @@ public class TowerDefense extends Game {
 		tiles[3][0]=new Tile(2);
 		tiles[3][0].setPosition(new Vec2(200*3,200*0));
 		
+		tiles[3][1]=new Tile(2);
+		tiles[3][1].setPosition(new Vec2(200*3,200*1));
+		
+		tiles[3][0]=new Tile(2);
+		tiles[3][0].setPosition(new Vec2(200*3,200*0));
+		
 		new Fliesentisch().start();
 	}
 	
