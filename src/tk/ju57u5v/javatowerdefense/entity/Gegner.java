@@ -60,12 +60,15 @@ public abstract class Gegner extends Entity {
 
 	@Override
 	public void render(Graphics2D g) {
-		super.render(g);
 		texture.draw(g, getRelativePosition());
 	}
 	
 	public void start() {
 		setPosition(startPos);
 		started=true;
+	}
+	
+	public void damage(double amount) {
+		life -= amount;
 	}
 }
