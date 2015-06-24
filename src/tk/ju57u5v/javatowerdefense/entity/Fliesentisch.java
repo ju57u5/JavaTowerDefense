@@ -6,7 +6,7 @@ import tk.ju57u5v.engine.Game;
 public class Fliesentisch extends Gegner {
 
 	public Fliesentisch () {
-		speed=1;
+		speed=2;
 		life=1;
 		damage=1;
 		exp=1;

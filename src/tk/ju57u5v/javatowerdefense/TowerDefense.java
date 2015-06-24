@@ -4,6 +4,7 @@ import tk.ju57u5v.engine.Game;
 import tk.ju57u5v.engine.components.Vec2;
 import tk.ju57u5v.engine.world.Tile;
 import tk.ju57u5v.javatowerdefense.entity.Fliesentisch;
+import tk.ju57u5v.javatowerdefense.tower.Mod;
 
 public class TowerDefense extends Game {
 	
@@ -55,6 +56,7 @@ public class TowerDefense extends Game {
 		tiles[3][0]=new Tile(2);
 		tiles[3][0].setPosition(new Vec2(200*3,200*0));
 		
+		new Mod().setPosition(new Vec2(100,0));
 		new Fliesentisch().start();
 	}
 	

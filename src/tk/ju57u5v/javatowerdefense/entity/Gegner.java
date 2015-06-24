@@ -47,7 +47,7 @@ public abstract class Gegner extends Entity {
 							
 						} else {
 							started=false;
-							System.out.println("finished");
+							
 						}
 						
 						vorher=tiles[c][i];
