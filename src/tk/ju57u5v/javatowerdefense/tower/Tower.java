@@ -32,7 +32,8 @@ public abstract class Tower extends Entity {
 		Vec2 kuerzeste = new Vec2(Double.MAX_VALUE, Double.MAX_VALUE);
 		Gegner gegner = null;
 
-		for (Entity e : Game.getRenderer().getEntities()) {
+		for (int c=0;c<Game.getRenderer().getEntities().size();c++) {
+			Entity e = Game.getRenderer().getEntities().get(c);
 			if (e instanceof Gegner) {
 				Vec2 strecke = e.getPosition().minus(getPosition());
 				if (strecke.length() < kuerzeste.length()) {

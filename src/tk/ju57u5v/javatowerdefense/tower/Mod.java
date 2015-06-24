@@ -12,6 +12,7 @@ public class Mod extends Tower {
 		shotCooldown=10;
 		texture = Game.getResourceManager().getResource("mod");
 		shotTexture = Game.getResourceManager().getResource("shoot");
+		this.setDimension(texture.getDimensions());
 	}
 	
 }

@@ -25,6 +25,9 @@ public abstract class Gegner extends Entity {
 	@Override
 	public void update() {
 		super.update();
+		if (life<=0) {
+			this.destroy();
+		}
 		if (started && !isMoving()) {
 			
 			Tile[][] tiles = Game.getTileManager().getTiles();

@@ -19,7 +19,6 @@ public class Schuss extends Entity{
 		this.target=target;
 		this.damage=damage;
 		this.initialise();
-		
 	}
 
 	@Override
