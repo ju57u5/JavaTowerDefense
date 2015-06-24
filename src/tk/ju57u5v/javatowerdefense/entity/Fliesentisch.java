@@ -7,7 +7,7 @@ public class Fliesentisch extends Gegner {
 
 	public Fliesentisch () {
 		speed=2;
-		life=1;
+		life=2;
 		damage=1;
 		exp=1;
 		money_droped=1;

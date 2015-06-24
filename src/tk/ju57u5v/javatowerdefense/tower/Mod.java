@@ -9,7 +9,7 @@ public class Mod extends Tower {
 		attack_speed = 1;
 		price = 100;
 		range=100;
-		shotCooldown=10;
+		shotCooldown=50;
 		texture = Game.getResourceManager().getResource("mod");
 		shotTexture = Game.getResourceManager().getResource("shoot");
 		this.setDimension(texture.getDimensions());
