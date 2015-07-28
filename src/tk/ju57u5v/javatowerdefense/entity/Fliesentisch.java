@@ -11,7 +11,7 @@ public class Fliesentisch extends Gegner {
 		damage=1;
 		exp=1;
 		money_droped=1;
-		texture = Game.getResourceManager().getResource("fliesentisch");
+		texture = Game.getResourceManager().getSprite("fliesentisch");
 		this.initialise();
 	}
 	
